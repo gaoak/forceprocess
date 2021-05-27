@@ -1,5 +1,5 @@
 %%
-% clear;
+clear;
 clc;
 close all;
 setPlotParameters;
@@ -13,6 +13,7 @@ nskip = 5;
 nvars = 7;
 for ii=1:1:length(filename)
     file{ii} = loadequispacedtimeseries(filename{ii}, nskip, nvars);
+    ii
 end
 %%
 for ii=1:1:3
